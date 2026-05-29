@@ -187,8 +187,7 @@ export const LHC = {
   },
 
   get breakingPoint() {
-    return Decimal.pow10(Decimal.pow10(225 + Accelerators.potency._milestones[1].effectOrDefault(0) +
-      Accelerators.emptiness._milestones[2].effectOrDefault(0) + Accelerators.cosmic._milestones[2].effectOrDefault(0)));
+    return DC.BEMAX;
   },
 
   get voidRunning() {
