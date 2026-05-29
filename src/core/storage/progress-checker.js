@@ -1,5 +1,5 @@
 import { GameMechanicState } from "../game-mechanics";
-
+// shit to autopublish
 class GameProgressState extends GameMechanicState {
   get id() {
     return this.config.id;
