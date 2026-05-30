@@ -722,7 +722,13 @@ window.ExponentialCostScaling = class ExponentialCostScaling {
       }
       contValue = Decimal.sqrt(discrim).div(DC.D2.times(this._logCostScale)).add(this._precalcCenter);
     }
-    return Decimal.clampMin(contValue, 0);
+    
+    // 1. Ensure the value does not exceed e250 using Decimal.min
+    // Note: If your codebase doesn't have DC.E250 predefined, use Decimal.pow(10, 250)
+    const cappedValue = Decimal.min(contValue, DC.E250 ?? Decimal.pow(10, 250));
+
+    // 2. Clamp at a minimum of 0 and return the capped value
+    return Decimal.clampMin(cappedValue, 0);
   }
 
   static log10(value) {
