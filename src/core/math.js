@@ -722,7 +722,7 @@ window.ExponentialCostScaling = class ExponentialCostScaling {
       }
       contValue = Decimal.sqrt(discrim).div(DC.D2.times(this._logCostScale)).add(this._precalcCenter);
     }
-    return Decimal.min(contValue, DC.E250);
+    return Decimal.min(contValue, DC.E300);
   }
 
   static log10(value) {

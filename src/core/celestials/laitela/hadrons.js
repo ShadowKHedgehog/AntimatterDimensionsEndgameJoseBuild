@@ -42,6 +42,6 @@ export const Hadrons = {
     time = time.gte(100) ? time.sub(100).sqrt().add(100) : time;
     return DualityUpgrade(19).isBought && !player.disablePostReality ? Decimal.min(Decimal.pow(Decimal.log10(
       time.max(1).min(100 * Accelerators.emptiness.effectValue2)).div(10).times(
-      1 + DualityUpgrade(21).effectOrDefault(0)).add(1), this.hadrons.dark),DC.E250) : DC.D1;
+      1 + DualityUpgrade(21).effectOrDefault(0)).add(1), this.hadrons.dark),DC.E90) : DC.D1;
   }
 };
