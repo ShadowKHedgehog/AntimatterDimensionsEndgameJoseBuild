@@ -71,7 +71,7 @@ export const dilationUpgrades = {
         Next: ${formatX(getTachyonGalaxyMultForDisplay(nextEffect), 4, 4)}`;
     },
     formatCost: value => format(value, 2),
-    purchaseCap: () => (BreakEternityUpgrade.tgThresholdUncap.isBought && !player.disablePostReality) ? Number.MAX_VALUE : 38
+    purchaseCap: () => (BreakEternityUpgrade.tgThresholdUncap.isBought && !player.disablePostReality) ? new Number(1e5) : 38
   }),
   tachyonGain: rebuyable({
     id: 3,
