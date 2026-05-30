@@ -227,6 +227,7 @@ window.DC = deepFreeze({
   E1_5E12:              new Decimal("1e1500000000000"),
   E1E15:                new Decimal("1e1000000000000000"),
   E9E15:                new Decimal("1e9000000000000000"),
+  EE70:                new Decimal("1e1e70"),
 
   //Hardcoded post-e9e15 values to be reformatted later
   E9E115:               Decimal.pow(10, 9e115),

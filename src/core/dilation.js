@@ -211,6 +211,9 @@ export function getDilationGainPerSecond() {
     dtRate = Decimal.pow(10, (((Decimal.log10(dtRate).sub(Decimal.log10(DilationSoftcapStart.PRIMARY_THRESHOLD))).div(10)).add(
       Decimal.log10(DilationSoftcapStart.PRIMARY_THRESHOLD))));
   }
+  if (dtRate.gte(DC.EE70)) {
+    dtRate = DC.EE70;
+  }
   return dtRate;
 }
 
