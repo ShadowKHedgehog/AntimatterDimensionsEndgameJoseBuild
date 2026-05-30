@@ -1236,7 +1236,7 @@ function passivePrestigeGen(realDiff) {
     }
     infGen = infGen.plus(player.partInfinitied);
     Currency.infinities.add(infGen.floor());
-    player.partInfinitied = infGen.minus(infGen.floor()).toNumber();
+    player.partInfinitied = infGen.minus(infGen.floor());
   }
 }
 

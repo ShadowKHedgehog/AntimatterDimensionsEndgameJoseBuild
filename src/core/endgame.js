@@ -671,7 +671,7 @@ export const Endgame = {
     Currency.infinities.reset();
     Currency.infinitiesBanked.reset();
     player.partInfinityPoint = DC.D0;
-    player.partInfinitied = 0;
+    player.partInfinitied = DC.D0;
     player.dimensionBoosts = DC.D0;
     player.galaxies = DC.D0;
     if (player.eternities.lte(1)) {

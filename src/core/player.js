@@ -341,7 +341,7 @@ window.player = {
   chall8TotalSacrifice: DC.D1,
   ic2Count: 0,
   partInfinityPoint: DC.D0,
-  partInfinitied: 0,
+  partInfinitied: DC.D0,
   break: false,
   break2: false,
   secretUnlocks: {
@@ -1197,7 +1197,7 @@ window.player = {
         chall8TotalSacrifice: DC.D1,
         ic2Count: 0,
         partInfinityPoint: DC.D0,
-        partInfinitied: 0,
+        partInfinitied: DC.D0,
         break: false,
         requirementChecks: {
           infinity: {

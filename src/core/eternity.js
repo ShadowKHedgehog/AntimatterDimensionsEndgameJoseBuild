@@ -224,7 +224,7 @@ export function initializeResourcesAfterEternity() {
   player.dimensionBoosts = (EternityMilestone.keepInfinityUpgrades.isReached) ? DC.D4 : DC.D0;
   player.galaxies = (EternityMilestone.keepInfinityUpgrades.isReached) ? DC.D1 : DC.D0;
   player.partInfinityPoint = DC.D0;
-  player.partInfinitied = 0;
+  player.partInfinitied = DC.D0;
   player.IPMultPurchases = DC.D0;
   Currency.infinityPower.reset();
   Currency.timeShards.reset();
