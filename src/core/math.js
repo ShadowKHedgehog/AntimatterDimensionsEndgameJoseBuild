@@ -722,15 +722,7 @@ window.ExponentialCostScaling = class ExponentialCostScaling {
       }
       contValue = Decimal.sqrt(discrim).div(DC.D2.times(this._logCostScale)).add(this._precalcCenter);
     }
-
-    // 1. Convert the Decimal 'contValue' into a native JavaScript number
-    const rawValue = contValue.toNumber();
-
-    // 2. Cap the value at 1e250 using Math.min
-    const cappedValue = Math.min(rawValue, 1e250);
-
-    // 3. Prevent negative numbers and return the final native number
-    return Math.max(cappedValue, 0);
+    return Decimal.min(contValue, DC.E250);
   }
 
   static log10(value) {
