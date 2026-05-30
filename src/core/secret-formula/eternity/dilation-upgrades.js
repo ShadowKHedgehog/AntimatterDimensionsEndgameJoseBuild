@@ -50,7 +50,7 @@ export const dilationUpgrades = {
       return formatX(value, 2, nonInteger ? 2 : 0);
     },
     formatCost: value => format(value, 2),
-    purchaseCap: () => Number.MAX_VALUE
+    purchaseCap: () => new Number(1e40)
   }),
   galaxyThreshold: rebuyable({
     id: 2,
@@ -90,7 +90,7 @@ export const dilationUpgrades = {
     },
     formatEffect: value => formatX(value, 2),
     formatCost: value => format(value, 2),
-    purchaseCap: () => Number.MAX_VALUE
+    purchaseCap: () => new Number(1e40)
   }),
   doubleGalaxies: {
     id: 4,
